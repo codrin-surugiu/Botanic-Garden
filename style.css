@@ -1,0 +1,102 @@
+body {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 0 auto;
+  background-color: #111;
+}
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.img {
+  background-image: url(./Picture/botanic.jpg);
+  width: 37rem;
+  height: 25rem;
+  position: absolute;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-45deg);
+}
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sideBar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideBar a {
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 20px;
+  color: darkslategrey;
+  font-weight: 400;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.openButton {
+  color: darkslategrey;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 9px 50px;
+  position: absolute;
+  height: 5rem;
+  border: none;
+}
+.smallPicture {
+  transform: rotate(-45deg);
+  width: auto;
+  height: 30rem;
+  left: 21rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.smallPicture h1 {
+  font-size: 5rem;
+  color: white;
+  display: flex;
+  width: 50px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.smallPicture p {
+  color: white;
+}
+
+.rotate {
+  width: 37rem;
+  height: 37rem;
+  border: 1px solid black;
+  position: absolute;
+  top: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
