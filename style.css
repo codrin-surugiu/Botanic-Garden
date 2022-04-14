@@ -5,12 +5,13 @@ body {
   background-color: #111;
 }
 * {
+  height: 100vh;
   box-sizing: border-box;
 }
 ::-webkit-scrollbar {
   display: none;
 }
-.img {
+.img1 {
   background-image: url(./Picture/botanic.jpg);
   width: 37rem;
   height: 25rem;
@@ -21,6 +22,12 @@ body {
   transform: rotate(-45deg);
 }
 .container {
+  background-image: url(./Picture/pexels-alesia-kozik-6016762.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
   display: flex;
   text-align: center;
   flex-direction: row;
@@ -41,10 +48,11 @@ body {
 }
 
 .sideBar a {
+  height: auto;
   text-decoration: none;
   margin-right: 10px;
   padding: 20px;
-  color: darkslategrey;
+  color: white;
   font-weight: 400;
   font-size: x-large;
   display: flex;
@@ -65,6 +73,7 @@ a:hover {
   border: none;
 }
 .smallPicture {
+  filter: blur(0);
   transform: rotate(-45deg);
   width: auto;
   height: 30rem;
@@ -99,4 +108,9 @@ a:hover {
   justify-content: center;
   align-items: center;
   transform: rotate(45deg);
+  position: relative;
+  border: 1px solid white;
+  top: 26rem;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
 }
